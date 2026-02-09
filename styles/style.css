@@ -3,7 +3,7 @@
 html {
   font-size: 16px;
   box-sizing: border-box;
-  background-color: #dadcdf;
+  background-color: lightpink;
 }
 
 *,
@@ -19,8 +19,9 @@ html {
 header {
   background-color: lightpink;
   color: black;
-  padding: 10px;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  padding: 20px;
+  margin-top: 50px;
 }
 
 body {
@@ -29,7 +30,8 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   color: deeppink;
-  background-color: #edf0f5;
+  margin: 10px;
+  background-color: lightpink;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
 }
@@ -70,4 +72,22 @@ p {
   color: white;
   text-align: center;
   font-size: 100px;
+}
+
+.contact-form {
+  background-color: lightpink;
+  color: black;
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+table {
+  width: 100%;
+  border-color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  padding: 20px;
 }
