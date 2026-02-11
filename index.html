@@ -25,7 +25,12 @@
     <main>
       <h1>Home</h1>
       <div class="hero-container">
-        <img src="./IMG_3735.jpeg" alt="hero image for background" width=1900px" height="1000px" />
+        <img
+          src="./IMG_3735.jpeg"
+          alt="hero image for background"
+          width="1500px"
+          height="1000px"
+        />
 
         <div class="hero-text">
           <h2>Claudia Dunlop</h2>
@@ -34,19 +39,88 @@
           <button>View My Work</button>
         </div>
       </div>
-  <div class="contact-form">
-  <form action="/subscribe" method="post">
-    <label for="name">Name: </label>
-    <input id="name" type="text" name="name" placeholder="Your Name Here" />
-    <label for="email">Email: </label>
-    <input id="email" type="email" name="email" placeholder="name@example.com" />
-    <label for="text">Message: </label>
-    <input id="message" type="text" name="text" placeholder="Your Message Here" />
+      <div class="projects">
+        <h2>Projects</h2>
+        <div class="card-one">
+          <img
+            src="rubiks-cube.jpg"
+            alt="project image"
+            width="200px"
+            height="200px"
+          />
+          <div class="container">
+            <h4>Rubics Cube Project</h4>
+            <p>
+              This project is a simulation of a rubics cube that can have moves
+              made on it. It also repeats back to you what a solution needed to
+              solve the cube would be.
+            </p>
+            <button type="view-project">View Project</button>
+          </div>
+        </div>
+        <div class="card-two">
+          <img
+            src="go-board.jpg"
+            alt="project image"
+            width="200px"
+            height="200px"
+          />
+          <div class="container">
+            <h4>Go Board Project</h4>
+            <p>
+              This is a simulation of the game "Go." You are able to do captures
+              and place different moves on the board in the game. At the end,
+              you are able to score the game by going square by square.
+            </p>
+            <button type="view-project">View Project</button>
+          </div>
+        </div>
+        <div class="card-three">
+          <img
+            src="python.jpg"
+            alt="project image"
+            width="200px"
+            height="200px"
+          />
+          <div class="container">
+            <h4>DSA Respository</h4>
+            <p>
+              This is a repository that I made for my Data Structures class,
+              where I was created my own versions of a lot of the typical
+              strucutres in python such as lists, linked lists, and binary
+              trees.
+            </p>
+            <button type="view-project">View Project</button>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="/subscribe" method="post">
+          <label for="name">Name: </label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Your Name Here"
+          />
+          <label for="email">Email: </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="name@example.com"
+          />
+          <label for="text">Message: </label>
+          <input
+            id="message"
+            type="text"
+            name="text"
+            placeholder="Your Message Here"
+          />
 
-    <button type="submit">Get In Touch</button>
-    
-  </form>
-  </div>
+          <button type="submit">Get In Touch</button>
+        </form>
+      </div>
     </main>
   </body>
 </html>

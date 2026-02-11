@@ -22,6 +22,42 @@ header {
   line-height: 1.5;
   padding: 20px;
   margin-top: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.projects {
+  background-color: lightpink;
+  color: black;
+  line-height: 1.5;
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.card-two {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  align-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-one {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  align-content: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-three {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  align-content: center;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 body {
@@ -34,6 +70,7 @@ body {
   background-color: lightpink;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+  overflow: auto;
 }
 
 h1 {
