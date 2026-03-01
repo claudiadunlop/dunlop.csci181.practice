@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #cbcbcb;
+        }
+        .page-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bento-grid {
+            display: grid;
+            max-width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .grid-item{
+            aspect-ratio: 1 / 1;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .grid-item img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .span-col-2 {
+            grid-column: span 2;
+            aspect-ratio: 2/1;
+        }
+
+        .span-row-2 {
+            grid-row: span 2;
+            aspect-ratio: 1/2;
+        }   
+
+        .color-fill {
+            background-color: #64d6ff;
+        }
+
+        .text-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body>
+    <main class = "page-wrapper">
+        <section class = "bento-grid">
+            <div class = "grid-item span-row-2"><img src="grid-pictures/IMG_6845.JPG" alt="Millie" width="100%" height="100%"></div>
+            <div class = "grid-item span-col-2 color-fill text-center"><h1>Millie!</h1></div>
+            <div class = "grid-item"><img src="grid-pictures/IMG_6843.jpeg" alt="Millie" width="100%" height="100%"></div>
+            <div class = "grid-item"><img src="grid-pictures/IMG_6844.jpeg" alt="Millie" width="100%" height="100%"></div>
+            <div class = "grid-item span-col-2"><img src="grid-pictures/IMG_6842.jpeg" alt="Millie" width="100%" height="100%"></div>
+            <div class = "grid-item"><img src="grid-pictures/IMG_7192.jpeg" alt="Millie" width="100%" height="100%"></div>
+        </section>
+    </main>
+</body>
+</html>
