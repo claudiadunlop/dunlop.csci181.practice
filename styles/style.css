@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+@layer base{
+
 html {
   font-size: 16px;
   box-sizing: border-box;
@@ -20,44 +22,13 @@ header {
   background-color: lightpink;
   color: black;
   line-height: 1.5;
-  padding: 20px;
-  margin-top: 50px;
+  justify-content: center;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.projects {
-  background-color: lightpink;
-  color: black;
-  line-height: 1.5;
-  padding: 20px;
-  margin-top: 50px;
-  text-align: center;
-}
 
-.card-two {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  margin: 10px;
-  align-content: center;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.card-one {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  margin: 10px;
-  align-content: center;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.card-three {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  margin: 10px;
-  align-content: center;
-  padding: 20px;
-  border-radius: 10px;
 }
 
 body {
@@ -65,7 +36,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: deeppink;
+  color: black;
   margin: 10px;
   background-color: lightpink;
   -webkit-font-smoothing: antialiased;
@@ -81,17 +52,42 @@ h1 {
   line-height: 1.5;
 }
 
-h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  color: black;
-  line-height: 1.5;
-}
-
 p {
   font-size: 1rem;
   line-height: 1.5;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.projects {
+  background-color: lightpink;
+  color: black;
+  line-height: 1.5;
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-one,
+.card-two,
+.card-three {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-container {
@@ -108,7 +104,19 @@ p {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  font-size: 100px;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.hero-button{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .contact-form {
@@ -128,3 +136,4 @@ table {
   line-height: 1.5;
   padding: 20px;
 }
+

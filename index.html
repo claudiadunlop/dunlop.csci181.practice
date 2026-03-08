@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Home</title>
   </head>
-  <body>
-    <header id="#page-header">
+  <body class = "min-h-screen flex flex-col">
+    <header id="page-header" class="sticky top-0 bg-slate-50 p-4">
+      <div class="flex justify-between items-center">
       <img
         src="./colored-logo.png"
         alt="the logo for the site"
@@ -21,9 +23,10 @@
           <li><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
+      </div>
     </header>
-    <main>
-      <h1>Home</h1>
+    <main class="flex-1">
+      <h1 class="sr-only">Home</h1>
       <div class="hero-container">
         <img
           src="./IMG_3735.jpeg"
@@ -36,12 +39,12 @@
           <h2>Claudia Dunlop</h2>
           <p>Student * Developer * Writer</p>
 
-          <button>View My Work</button>
+          <button class="hero-button">View My Work</button>
         </div>
       </div>
       <div class="projects">
         <h2>Projects</h2>
-        <div class="card-one">
+        <div class="card-one ">
           <img
             src="rubiks-cube.jpg"
             alt="project image"
@@ -94,6 +97,71 @@
           </div>
         </div>
       </div>
+      <section class="testimonials">
+        <h2 class="text-xl font-bold">Testimonials</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <li class="bg-slate-100 p-4 rounded-lg shadow-md shadow-slate-500">
+          <figure>
+            <div class="flex flex-col gap-4 items-start">
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false" class="fill-current text-gray-500 scale-x-[-1]" width="30" height="30">
+                  <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+                </svg>
+              <blockquote>
+                <p class="text-sm text-slate-600 italic">This website was easy to navigate and provided a great user experience. I would love to work with Claudia Dunlop again.</p>
+              </blockquote>
+            </div>
+
+            <figcaption class="flex flex-row gap-4 items-center mt-4">
+              <img class="rounded-xl" src="images/headshot-1.png" alt="picture of a man" width="75" height="100"/>
+              <div>
+                <p class="text-xl text-slate-900 font-medium">Brian Connor</p>
+                <p class="text-sm text-slate-500">Software Developer</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="bg-slate-100 p-4 rounded-lg shadow-md shadow-slate-500">
+          <figure>
+            <div class="flex flex-col gap-4 items-start">
+                <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false" class="fill-current text-gray-500 scale-x-[-1]" width="30" height="30">
+                  <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+                </svg>
+              <blockquote>
+                <p class="text-sm text-slate-600 italic">I was very impressed by the writing that was done through this company. It was exactly what I requested and got the job done quickly and efficiently.</p>
+              </blockquote>
+            </div>
+
+            <figcaption class="flex flex-row gap-4 items-center mt-4">
+              <img class="rounded-xl" src="images/headshot-2.png" alt="picture of a woman" width="75" height="100"/>
+              <div>
+                <p class="text-xl text-slate-900 font-medium">Sarah Jones</p>
+                <p class="text-sm text-slate-500">CEO</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="bg-slate-100 p-4 rounded-lg shadow-md shadow-slate-500">
+          <figure>
+            <div class="flex flex-col gap-4 items-start">
+              <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false" class="fill-current text-gray-500 scale-x-[-1]" width="30" height="30">
+                <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+              </svg>
+              <blockquote>
+                <p class="text-sm text-slate-600 italic">The software that was developed was clean, efficient, and effective. Claudia Dunlop gets the job done correctly and in a timely manner.</p>
+              </blockquote>
+            </div>
+
+            <figcaption class="flex flex-row gap-4 items-center mt-4">
+              <img class="rounded-xl" src="images/headshot-3.png" alt="picture of a woman" width="75" height="100"/>
+              <div>
+                <p class="text-xl text-slate-900 font-medium">Jamie Mason</p>
+                <p class="text-sm text-slate-500">NASA Engineer</p>
+              </div>
+            </figcaption>
+          </figure>
+        </li>          
+      </ul>
+      </section>
       <div class="contact-form">
         <form action="/subscribe" method="post">
           <label for="name">Name: </label>
@@ -122,5 +190,29 @@
         </form>
       </div>
     </main>
+    <footer class="flex justify-center border-t border-slate-200 bg-slate-50">
+      <h2 class="sr-only">Site Footer</h2>
+      <div class="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-10 px-6 py-12">
+        <div class="flex flex-col gap-4 justify-start">
+          <h3 class="mt-0 font-meidum text-sm">Claudia Dunlop</h3>
+          <p class="text-sm">I am a computer science and political science student who is also a softward developer and a writer.</p>
+          <p class="text-xs text slate-500">2026 Claudia Dunlop. All rights reserved.</p>
+        </div>
+        <nav class="flex flex-col gap-4 justify-start">
+          <h3 class="mt-0 font-medium text-sm">Quick Links</h3>
+          <ul class="flex flex-col gap-2 text-sm justify-start items-start">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
+        </nav>
+        <div class="flex flex-col gap-4 justify-start">
+          <h3 class="mt-0 font-medium text-sm">Contact</h3>
+          <address class="flex flex-col gap-2 text-sm">
+            <p><a href="mailto:claudia.dunlop@umontana.edu">claudia.dunlop@umontana.edu</a></p>
+            <p class="text-sm text-slate-500">Missoula, MT</p>
+          </address>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
