@@ -8,6 +8,7 @@
     <title>Home</title>
   </head>
   <body class = "min-h-screen flex flex-col">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header id="page-header" class="sticky top-0 bg-slate-50 p-4">
       <div class="flex justify-between items-center">
       <img
@@ -17,15 +18,15 @@
         height="48px"
       />
       <span>Claudia Dunlop</span>
-      <nav>
+      <nav aria-label="Primary navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
       </div>
     </header>
-    <main class="flex-1">
+    <main id = "main-content" class="flex-1">
       <h1 class="sr-only">Home</h1>
       <div class="hero-container">
         <img
@@ -52,7 +53,7 @@
             height="200px"
           />
           <div class="container">
-            <h4>Rubics Cube Project</h4>
+            <h3>Rubics Cube Project</h3>
             <p>
               This project is a simulation of a rubics cube that can have moves
               made on it. It also repeats back to you what a solution needed to
@@ -69,7 +70,7 @@
             height="200px"
           />
           <div class="container">
-            <h4>Go Board Project</h4>
+            <h3>Go Board Project</h3>
             <p>
               This is a simulation of the game "Go." You are able to do captures
               and place different moves on the board in the game. At the end,
@@ -86,7 +87,7 @@
             height="200px"
           />
           <div class="container">
-            <h4>DSA Respository</h4>
+            <h3>DSA Repository</h3>
             <p>
               This is a repository that I made for my Data Structures class,
               where I was created my own versions of a lot of the typical
@@ -198,7 +199,7 @@
           <p class="text-sm">I am a computer science and political science student who is also a softward developer and a writer.</p>
           <p class="text-xs text slate-500">2026 Claudia Dunlop. All rights reserved.</p>
         </div>
-        <nav class="flex flex-col gap-4 justify-start">
+        <nav aria-label="Footer navigation" class="flex flex-col gap-4 justify-start">
           <h3 class="mt-0 font-medium text-sm">Quick Links</h3>
           <ul class="flex flex-col gap-2 text-sm justify-start items-start">
             <li><a href="index.html">Home</a></li>
