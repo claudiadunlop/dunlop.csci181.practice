@@ -11,12 +11,28 @@
   }
 }
 
+:root {
+  --bg: lightpink;
+  --text: black;
+  --header-bg: white;
+  --footer-bg: white;
+  --box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+body.dark {
+  --bg: #0b1220;
+  --text: lightpink;
+  --header-bg: #3a1935;
+  --footer-bg: #3a1935;
+  --box-shadow: 0 8px 16px rgba(219, 217, 217, 0.5);
+}
+
 @layer base{
 
 html {
   font-size: 16px;
   box-sizing: border-box;
-  background-color: lightpink;
+  background-color: var(--bg);
 }
 
 *,
@@ -30,8 +46,8 @@ html {
 }
 
 header {
-  background-color: lightpink;
-  color: black;
+  background-color: var(--header-bg);
+  color: var(--text);
   line-height: 1.5;
   justify-content: center;
   position: sticky;
@@ -47,9 +63,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: black;
+  color: var(--text);
   margin: 10px;
-  background-color: lightpink;
+  background-color: var(--bg);
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
   overflow: auto;
@@ -59,7 +75,7 @@ h1 {
   font-size: 3rem;
   font-weight: bolder;
   text-align: center;
-  color: black;
+  color: var(--text);
   line-height: 1.5;
 }
 
@@ -76,8 +92,8 @@ h2 {
 }
 
 .projects {
-  background-color: lightpink;
-  color: black;
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.5;
   padding: 20px;
   margin-top: 50px;
@@ -90,7 +106,7 @@ h2 {
 .card-one,
 .card-two,
 .card-three {
-  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  box-shadow: var(--box-shadow);
   margin: 10px;
   padding: 20px;
   border-radius: 10px;
@@ -131,8 +147,8 @@ h2 {
 }
 
 .contact-form {
-  background-color: lightpink;
-  color: black;
+  background-color: var(--bg);
+  color: var(--text);
   text-align: center;
   line-height: 1.5;
   padding: 20px;
@@ -141,7 +157,7 @@ h2 {
 
 table {
   width: 100%;
-  border-color: black;
+  border-color: var(--text);
   text-align: center;
   margin-bottom: 20px;
   line-height: 1.5;
@@ -157,8 +173,8 @@ nav a[aria-current="page"] {
   position: absolute;
   top: -40px;
   left: 10px;
-  background: lightpink;
-  color: black;
+  background: var(--bg);
+  color: var(--text);
   padding: 8px;
   z-index: 10000;
 }
